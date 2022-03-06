@@ -102,7 +102,7 @@ android {
         buildConfigField "Boolean", "IS_CI", "${isCi}"
         buildConfigField "Boolean", "EXTENDED_VALIDATION", "false"
 
-        manifestPlaceholders = [admobAppId: props.getProperty("admobAppId"), crashlyticsApiKey: props.getProperty("crashlyticsApiKey")]
+        manifestPlaceholders = [admobAppId: props.getProperty("admobAppId")]
     }
 
     compileOptions {
